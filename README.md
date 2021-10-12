@@ -1,6 +1,6 @@
 # Data-Structures-and-Algorithms
 
-For text of the questions in "Algorithms Challenge" folder, check the pdf file - "Learning Algorithms Through Programming and Puzzle Solving"
+For the text of the questions in "Algorithms Challenge" folder, check the pdf file - "Learning Algorithms Through Programming and Puzzle Solving"
 
 ### Useful Resources:
 - [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
