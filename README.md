@@ -22,3 +22,10 @@ For the text of the questions in "Algorithms Challenge" folder, check the pdf fi
 - [Two Rocks Game](http://dm.compsciclub.ru/lti/take-the-last-stone)
 - [Three Rocks Game](http://dm.compsciclub.ru/lti/three-rocks-game)
 - [Primitive Calculator](http://dm.compsciclub.ru/lti/primitive-calculator)
+
+### Useful Environments:
+- [LeetCode](https://leetcode.com/problemset/all/)
+- [ProjectEuler](https://projecteuler.net/archives)
+- [JDoodle](https://www.jdoodle.com/)
+- [Regex101](https://regex101.com/)
+- [CodingBat](https://codingbat.com/java)
