@@ -8,6 +8,7 @@ For the text of the questions in "Algorithms Challenge" folder, check the pdf fi
 - [Coursera - Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms)
 - [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
 - [Khan Academy - Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
+- [Open-Sourse Algorithm Library](https://the-algorithms.com/)
 
 ### Interactive Puzzles to Understand Algorithmic Problems
 - [Largest Number](http://dm.compsciclub.ru/lti/largest-number)
