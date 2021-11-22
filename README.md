@@ -30,3 +30,7 @@ For the text of the questions in "Algorithms Challenge" folder, check the pdf fi
 - [JDoodle](https://www.jdoodle.com/)
 - [Regex101](https://regex101.com/)
 - [CodingBat](https://codingbat.com/java)
+
+### YouTube Channels:
+- [Computerphile](https://www.youtube.com/user/Computerphile)
+- [The Coding Train](https://www.youtube.com/user/shiffman)
