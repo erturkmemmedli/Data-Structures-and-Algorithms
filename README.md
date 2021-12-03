@@ -9,6 +9,7 @@ For the text of the questions in "Algorithms Challenge" folder, check the pdf fi
 - [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
 - [Khan Academy - Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
 - [Open-Sourse Algorithm Library](https://the-algorithms.com/)
+- [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm#PatternSearching)
 
 ### Interactive Puzzles to Understand Algorithmic Problems
 - [Largest Number](http://dm.compsciclub.ru/lti/largest-number)
