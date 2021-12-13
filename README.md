@@ -3,8 +3,9 @@
 For the text of the questions in "Algorithms Challenge" folder, check the pdf file - "Learning Algorithms Through Programming and Puzzle Solving"
 
 ### Useful Resources:
-- [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+- [Data Structure Visualizations (David Galles)](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
+- [Edit Distance Calculator (Peter Kleiweg)](https://www.let.rug.nl/~kleiweg/lev/)
 - [Coursera - Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms)
 - [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
 - [Khan Academy - Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
