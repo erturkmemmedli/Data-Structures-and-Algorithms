@@ -4,6 +4,7 @@
 - [Data Structure Visualizations (David Galles)](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
 - [Edit Distance Calculator (Peter Kleiweg)](https://www.let.rug.nl/~kleiweg/lev/)
+- [Learning Algorithms Through Interactive Puzzles](https://discrete-math-puzzles.github.io/everything.html)
 - [Coursera - Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms)
 - [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
 - [Coursera - Algorithms Part I](https://www.coursera.org/learn/algorithms-part1)
