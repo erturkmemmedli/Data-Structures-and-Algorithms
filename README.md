@@ -12,11 +12,11 @@
 - [Coursera - Analysis of Algorithms](https://www.coursera.org/learn/analysis-of-algorithms)
 - [Khan Academy - Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
 - [Open-Sourse Algorithm Library](https://the-algorithms.com/)
-- [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm#PatternSearching)
 
 ### Useful Environments:
 - [LeetCode](https://leetcode.com/problemset/all/)
 - [ProjectEuler](https://projecteuler.net/archives)
+- [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm)
 - [JDoodle](https://www.jdoodle.com/)
 - [Regex101](https://regex101.com/)
 - [CodingBat](https://codingbat.com/java)
