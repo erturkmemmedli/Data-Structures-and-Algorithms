@@ -22,9 +22,7 @@ def compute_min_number_of_refills(d, m, stops):
             else:
                 return -1 # "Impossible"
     if d - position <= m:
-        print(refill)
         return len(refill)
     else:
         refill.append(stops[-1])
-        print(refill)
         return len(refill)
