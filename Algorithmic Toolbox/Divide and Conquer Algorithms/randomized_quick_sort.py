@@ -1,0 +1,33 @@
+import random
+
+def partition3(A, l, r):
+    pivot = A[l]
+    part1 = l
+    part2 = l
+    for i in range(l + 1, r + 1):
+        if A[i] < pivot:
+            part1 += 1
+            part2 += 1
+            A[i], A[part2] = A[part2], A[i]
+            A[part2], A[part1] = A[part1], A[part2]
+        elif A[i] == pivot:
+            part2 += 1
+            A[i], A[part2] = A[part2], A[i]
+    A[l], A[part1] = A[part1], A[l]
+    return part1, part2
+
+def randomized_quick_sort(A, l, r):
+    if l >= r:
+        return
+    k = random.randint(l, r)
+    A[l], A[k] = A[k], A[l]
+    (m1, m2) = partition3(A, l, r)
+    randomized_quick_sort(A, l, m1 - 1)
+    randomized_quick_sort(A, m2 + 1, r)
+
+if __name__ == '__main__':
+    input_n = int(input())
+    elements = list(map(int, input().split()))
+    assert len(elements) == input_n
+    randomized_quick_sort(elements, 0, len(elements) - 1)
+    print(*elements)
