@@ -25,3 +25,4 @@
 - [Computerphile](https://www.youtube.com/user/Computerphile)
 - [The Coding Train](https://www.youtube.com/user/shiffman)
 - [Tech Dose](https://www.youtube.com/c/TECHDOSE4u/videos)
+- [NeetCode](https://www.youtube.com/c/NeetCode/videos)
