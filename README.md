@@ -29,3 +29,4 @@
 - [Corey Schafer](https://www.youtube.com/c/Coreyms/videos)
 - [TechLead](https://www.youtube.com/c/TechLead/videos)
 - [Nick White](https://www.youtube.com/c/NickWhite/videos)
+- [Kevin Naughton Jr.](https://www.youtube.com/c/KevinNaughtonJr/videos)
