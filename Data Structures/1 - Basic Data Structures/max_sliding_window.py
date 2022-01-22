@@ -7,6 +7,8 @@ def max_sliding_window(A, m):
     while i < len(A):
         if i == 0:
             Window.append((A[i], i))
+            if len(A) == 1:
+                result = Window[0][0]
             i += 1
             continue           
         if len(Window) != 0 and Window[-1][0] <= A[i]:
