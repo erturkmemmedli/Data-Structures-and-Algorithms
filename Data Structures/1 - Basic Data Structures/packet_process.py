@@ -26,9 +26,9 @@ class Buffer:
             if len(self.finish_time) > 0:
                 started_at = self.finish_time[-1]
                 self.finish_time.append(self.finish_time[-1] + request[1])
-                self.size -= 1
-                
+                self.size -= 1                
                 return Response(was_dropped, started_at)
+            
             if len(self.finish_time) == 0:
                 started_at = request[0]
                 self.finish_time.append(request[1])
