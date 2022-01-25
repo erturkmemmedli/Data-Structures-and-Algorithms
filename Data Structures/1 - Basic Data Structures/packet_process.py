@@ -26,7 +26,7 @@ class Buffer:
             if len(self.finish_time) > 0:
                 started_at = self.finish_time[-1]
                 self.finish_time.append(self.finish_time[-1] + request[1])
-                self.size -= 1                
+                self.size -= 1
                 return Response(was_dropped, started_at)
             
             if len(self.finish_time) == 0:
@@ -37,25 +37,20 @@ class Buffer:
             
         return Response(True, -1)
 
-def process_requests(requests, buffer):
-    responses = []
-    
-    for request in requests:
-        responses.append(buffer.process(request))
-        
-    return responses
-
 def main():
     buffer_size, n_requests = map(int, input().split())
-    data = list(map(int, input().split()))
-    requests = []
     
-    for i in range(0, len(data), 2):
-        arrived_at, time_to_process = data[i], data[i + 1]
+    requests = []
+    responses = []
+    
+    for i in range(n_requests):
+        arrived_at, time_to_process = map(int, input().split())
         requests.append(Request(arrived_at, time_to_process))
         
     buffer = Buffer(buffer_size)
-    responses = process_requests(requests, buffer)
+
+    for request in requests:
+        responses.append(buffer.process(request))
     
     for response in responses:
         print(response.started_at if not response.was_dropped else -1)
