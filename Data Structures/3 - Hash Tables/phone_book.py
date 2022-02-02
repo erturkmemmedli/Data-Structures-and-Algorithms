@@ -18,28 +18,23 @@ class HashTable():
         hashed_key = self.hashing(key)
         if self.table[hashed_key] == None:
             self.table[hashed_key] = (key, value)
-            #print(self.table)
             return
         i = 1
-        while self.table[hashed_key] != None and self.table[hashed_key] != 0:
+        while self.table[hashed_key] != None and self.table[hashed_key] != -1:
             if self.table[hashed_key][0] == key:
                 self.table[hashed_key] = (key, value)
-                self.rehash(self.table)
-                #print(self.table)
                 return
             hashed_key += i * self.double_hashing(key)
             hashed_key = hashed_key % self.size
-            #print(hashed_key)
             i += 1 
         self.table[hashed_key] = (key, value)
-        #print(self.table)
         self.rehash(self.table)
 
     def find(self, key):
         hashed_key = self.hashing(key)
         i = 1
         while self.table[hashed_key] != None:
-            if self.table[hashed_key] != 0 and self.table[hashed_key][0] == key:
+            if self.table[hashed_key] != -1 and self.table[hashed_key][0] == key:
                 print(self.table[hashed_key][1])
                 return
             hashed_key += i * self.double_hashing(key)
@@ -51,11 +46,10 @@ class HashTable():
     def delete(self, key):
         hashed_key = self.hashing(key)
         i = 1
-        while self.table[hashed_key] != None:
+        while self.table[hashed_key] != None and self.table[hashed_key] != -1:
             if self.table[hashed_key][0] == key:
                 self.num_of_keys -= 1
-                self.table[hashed_key] = 0
-                #print(self.table)
+                self.table[hashed_key] = -1
                 return
             hashed_key += i * self.double_hashing(key)
             hashed_key = hashed_key % self.size
@@ -64,7 +58,6 @@ class HashTable():
     def rehash(self, table):
         load_factor = self.num_of_keys / self.size
         if load_factor > self.max_load_factor:
-            #print(load_factor)
             temp = self.table
             self.size *= 2
             self.table = [None] * self.size
