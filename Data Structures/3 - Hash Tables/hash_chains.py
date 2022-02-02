@@ -95,11 +95,14 @@ class HashChainTable:
 if __name__ == '__main__':
     bucket_count = int(input())
     chain = HashChainTable(bucket_count)
+    elements = []
     query_count = int(input())
     for i in range(query_count):
         query = input().split()
         if query[0] == 'add':
-            chain.insert(query[1])
+            if query[1] not in elements:
+                chain.insert(query[1])
+                elements.append(query[1])
         elif query[0] == 'del':
             chain.delete(query[1])
         elif query[0] == 'find':
