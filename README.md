@@ -14,6 +14,13 @@
 - [Coursera - Analysis of Algorithms](https://www.coursera.org/learn/analysis-of-algorithms)
 - [Khan Academy - Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
 - [Open-Sourse Algorithm Library](https://the-algorithms.com/)
+- [San Diego State University - CS310 - Data Structures in Java](https://www.youtube.com/playlist?list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk)
+- [Stanford University - Algorithms 1](https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V)
+- [Stanford University - Algorithms 2](https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6)
+- [MIT - 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+- [Harvard University - CS50 - Algorithms](https://www.youtube.com/c/cs50)
+- [MIT - 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)
+- [MIT - OpenCourseWare](https://www.youtube.com/c/mitocw)
 
 ### Useful Environments:
 - [LeetCode](https://leetcode.com/problemset/all/)
