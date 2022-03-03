@@ -5,7 +5,7 @@
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
 - [Edit Distance Calculator (Peter Kleiweg)](https://www.let.rug.nl/~kleiweg/lev/)
 - [Learning Algorithms Through Interactive Puzzles](https://discrete-math-puzzles.github.io/everything.html)
-- ["Algorithm" is Not a Four-Letter Word (Jamis Buck)](https://www.jamisbuck.org/presentations/rubyconf2011/)
+- [Algorithm is Not a Four-Letter Word (Jamis Buck)](https://www.jamisbuck.org/presentations/rubyconf2011/)
 - [The Buckblog (Jamis Buck)](http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap.html)
 - [Coursera - Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms)
 - [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
