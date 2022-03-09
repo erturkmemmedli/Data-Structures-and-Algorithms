@@ -1,3 +1,9 @@
+import sys
+import threading
+import time
+sys.setrecursionlimit(10**7)
+threading.stack_size(2**27)
+
 class Node:
     def __init__(self, key):
         self.key = key
@@ -31,9 +37,12 @@ def postorder(tree):
         postorder(tree.right)
     print(tree.key, end = ' ') 
 
-if __name__ == '__main__':
+def main():
     n = int(input())
     input_list = []
+    #data = list(map(int, input().split()))
+    #for k in range(n):
+    #    input_list.append(data[3*k:3*k+3])
     for _ in range(n):
         indices = list(map(int, input().split()))
         input_list.append(indices)
@@ -51,3 +60,6 @@ if __name__ == '__main__':
     preorder(tree)
     print("\n", end = '')
     postorder(tree)
+    
+threading.Thread(target=main).start()
+time.sleep(10)
