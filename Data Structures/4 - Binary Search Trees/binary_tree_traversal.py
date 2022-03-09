@@ -1,7 +1,7 @@
 import sys
 import threading
 import time
-sys.setrecursionlimit(10**6)
+sys.setrecursionlimit(10**7)
 threading.stack_size(2**27)
 
 class Node:
