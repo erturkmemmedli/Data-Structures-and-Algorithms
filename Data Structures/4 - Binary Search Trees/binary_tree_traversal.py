@@ -40,9 +40,6 @@ def postorder(tree):
 def main():
     n = int(input())
     input_list = []
-    #data = list(map(int, input().split()))
-    #for k in range(n):
-    #    input_list.append(data[3*k:3*k+3])
     for _ in range(n):
         indices = list(map(int, input().split()))
         input_list.append(indices)
