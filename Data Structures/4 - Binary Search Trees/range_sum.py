@@ -130,8 +130,10 @@ def RebalanceLeft(node):
     elif R.left != None:
         rotated = RotateRight(R)
     rotated = RotateLeft(node)
-    rotated.left.height = AdjustHeight(rotated.left)
-    rotated.right.height = AdjustHeight(rotated.right)
+    if rotated.left != None:
+        rotated.left.height = AdjustHeight(rotated.left)
+    if rotated.right != None:
+        rotated.right.height = AdjustHeight(rotated.right)
     rotated.height = AdjustHeight(rotated)
     return rotated
 
@@ -143,8 +145,10 @@ def RebalanceRight(node):
     elif L.right != None:
         rotated = RotateLeft(L)
     rotated = RotateRight(node)
-    rotated.right.height = AdjustHeight(rotated.right)
-    rotated.left.height = AdjustHeight(rotated.left)
+    if rotated.right != None:
+        rotated.right.height = AdjustHeight(rotated.right)
+    if rotated.left != None:
+        rotated.left.height = AdjustHeight(rotated.left)
     rotated.height = AdjustHeight(rotated)
     return rotated
         
