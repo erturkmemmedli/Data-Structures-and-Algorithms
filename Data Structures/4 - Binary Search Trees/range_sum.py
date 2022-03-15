@@ -83,13 +83,15 @@ def AVLDelete(key, root):
     node = Find(key, root)
     if node.parent != None:
         P = node.parent
-    elif Next(node) != None:
-        P = Next(node).parent
-    else:
-        P = node
     root = Delete(key, root)
-    if root != None:
+    if node.parent != None:
         root = Rebalance(P)
+    if root is not None:
+        if root.left is not None:
+            root.left.height = AdjustHeight(root.left)
+        if root.right is not None:
+            root.right.height = AdjustHeight(root.right)
+    root = Rebalance(root)
     return root
 
 def Rebalance(node):
