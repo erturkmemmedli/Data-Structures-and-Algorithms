@@ -47,4 +47,3 @@ def main():
         print(db.merge(table[0], table[1]))
 
 threading.Thread(target=main).start()
-time.sleep(10)
