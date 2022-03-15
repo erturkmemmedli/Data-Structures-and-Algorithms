@@ -22,6 +22,7 @@ def main():
     if n == 0:
         print('CORRECT')
     else:
+        flag = True
         input_list = []
         for _ in range(n):
             indices = list(map(int, input().split()))
