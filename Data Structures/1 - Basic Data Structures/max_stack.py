@@ -15,18 +15,18 @@ class MaxStack():
         self.tail_queue = None
 
     def push(self, key):
-        node_stack = Node(key)      
-        
-        node_stack.next = self.head_stack
-        node_stack.prev = None
+        node_stack = Node(key)
 
         if self.head_stack == None:
             self.head_stack = node_stack
             self.tail_stack = node_stack
+            node_stack.next = None
+            node_stack.prev = None 
             
         else:
             node_stack.next = self.head_stack
             self.head_stack = node_stack
+            node_stack.next.prev = node_stack
         
         node_queue = Node(key)
         
@@ -38,10 +38,10 @@ class MaxStack():
             
         else:
             temp = self.head_queue
-            
+       
             while temp != None and temp.key > node_queue.key:
-                temp = temp.next   
-                
+                    temp = temp.next
+            
             if temp != None:
                 if temp == self.head_queue:
                     node_queue.next = temp
@@ -50,16 +50,16 @@ class MaxStack():
                     node_queue.prev = None
                     
                 else:
-                    node_queue.prev = temp.prev.next
+                    node_queue.prev = temp.prev
                     temp.prev.next = node_queue
                     node_queue.next = temp
                     temp.prev = node_queue
                     
             else:
                 node_queue.prev = self.tail_queue
-                self.tail_queue.next = node_queue
+                node_queue.prev.next = node_queue
                 self.tail_queue = node_queue
-                node_queue.next = None          
+                node_queue.next = None
     
     def pop(self):
         popped = self.head_stack
@@ -81,11 +81,11 @@ class MaxStack():
             
             while temp != None and temp.key != popped.key:
                 temp = temp.next
-                
+
             if temp == self.head_queue:
                 self.head_queue = self.head_queue.next
                 self.head_queue.prev = None
-                
+                            
             elif temp == self.tail_queue:
                 self.tail_queue = self.tail_queue.prev
                 self.tail_queue.next = None
@@ -120,7 +120,7 @@ if __name__ == '__main__':
     for i in range(n):
         query = input().split()
         if query[0] == 'push':
-            stack.push(query[1])
+            stack.push(int(query[1]))
         elif query[0] == 'pop':
             stack.pop()
         elif query[0] == 'max':
