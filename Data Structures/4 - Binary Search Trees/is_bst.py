@@ -1,6 +1,6 @@
 import sys, threading, time
 sys.setrecursionlimit(10**7)
-threading.stack_size(2**27)
+threading.stack_size(2**28)
 
 class Node:
     def __init__(self, key):
@@ -17,7 +17,7 @@ def inorder(tree, inorder_list):
     if tree.right != None:
         inorder(tree.right, inorder_list)
             
-if __name__ == '__main__':
+def main():
     n = int(input())
     if n == 0:
         print('CORRECT')
@@ -48,4 +48,3 @@ if __name__ == '__main__':
             print('INCORRECT')
 
 threading.Thread(target = main).start()
-time.sleep(10)
