@@ -37,9 +37,11 @@ def main():
     assert len(row_counts) == n_tables
     db = Database(row_counts)
     union = []
-    data = list(map(int, input().split()))
-    for i in range(0, len(data), 2):
-        destination, source = data[i], data[i+1]
+    data = []
+    for i in range(n_queries):
+        data.append(list(map(int, input().split())))
+    for i in range(len(data)):
+        destination, source = data[i][0], data[i][1]
         union.append(Union(destination - 1, source - 1))
     for table in union:
         print(db.merge(table[0], table[1]))
