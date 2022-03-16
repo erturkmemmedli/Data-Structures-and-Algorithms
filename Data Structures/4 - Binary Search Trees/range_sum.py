@@ -63,10 +63,14 @@ def Delete(key, root):
         root.right = Delete(key, root.right)
         if root.right != None:
             root.right.parent = root
-    else:
+    else:    
         if root.left == None:
+            if root.right != None:
+                root.right.parent = root.parent
             return root.right
         elif root.right == None:
+            if root.left != None:
+                root.left.parent = root.parent
             return root.left
         next_node = Next(root)
         root.key = next_node.key
@@ -86,10 +90,10 @@ def AVLDelete(key, root):
     root = Delete(key, root)
     if node.parent != None:
         root = Rebalance(P)
-    if root is not None:
-        if root.left is not None:
+    if root != None:
+        if root.left != None:
             root.left.height = AdjustHeight(root.left)
-        if root.right is not None:
+        if root.right != None:
             root.right.height = AdjustHeight(root.right)
     root = Rebalance(root)
     return root
@@ -201,27 +205,38 @@ if __name__ == '__main__':
     M = 1000000001
     x = 0
     n = int(input())
-    for _ in range(n):
-        operation = input().split()
-        if operation[0] == '+':
-            node = Find((int(operation[1]) + x) % M, tree)
-            if node is None or (node is not None and node.key != (int(operation[1]) + x) % M):
-                tree = AVLInsert((int(operation[1]) + x) % M, tree)
+    data = input().split()
+    i = 0
+    operation = []
+    while i < len(data):
+        if data[i] in ['-', '+', '?']:
+            operation.append(data[i:i+2])
+            i += 2
+            continue
+        if data[i] == 's':
+            operation.append(data[i:i+3])
+            i += 3
+            continue
+    for j in range(n):
+        if operation[j][0] == '+':
+            node = Find((int(operation[j][1]) + x) % M, tree)
+            if node is None or (node is not None and node.key != (int(operation[j][1]) + x) % M):
+                tree = AVLInsert((int(operation[j][1]) + x) % M, tree)
             else:
                 continue
-        elif operation[0] == '-':
-            node = Find((int(operation[1]) + x) % M, tree)
-            if node is not None and node.key == (int(operation[1]) + x) % M:
-                tree = AVLDelete((int(operation[1]) + x) % M, tree)
+        elif operation[j][0] == '-':
+            node = Find((int(operation[j][1]) + x) % M, tree)
+            if node is not None and node.key == (int(operation[j][1]) + x) % M:
+                tree = AVLDelete((int(operation[j][1]) + x) % M, tree)
             else:
                 continue
-        elif operation[0] == '?':
-            node = Find((int(operation[1]) + x) % M, tree)
-            if node is not None and node.key == (int(operation[1]) + x) % M:
+        elif operation[j][0] == '?':
+            node = Find((int(operation[j][1]) + x) % M, tree)
+            if node is not None and node.key == (int(operation[j][1]) + x) % M:
                 print("Found")
             else:
                 print("Not found")
-        elif operation[0] == 's':
-            summ = RangeSum((int(operation[1]) + x) % M, (int(operation[2]) + x) % M, tree)
+        elif operation[j][0] == 's':
+            summ = RangeSum((int(operation[j][1]) + x) % M, (int(operation[j][2]) + x) % M, tree)
             x = summ
             print(summ)
