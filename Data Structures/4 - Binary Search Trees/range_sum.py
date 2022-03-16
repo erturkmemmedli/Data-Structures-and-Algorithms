@@ -181,31 +181,20 @@ def sum(from_point, to_point):
         answer += right.sum
     root = merge(merge(left, middle), right)
     return answer
-
+            
 if __name__ == '__main__':
     M = 1000000001
     n = int(input())
     x = 0
-    data = input().split()
-    i = 0
-    operation = []
-    while i < len(data):
-        if data[i] in ['-', '+', '?']:
-            operation.append(data[i:i+2])
-            i += 2
-            continue
-        if data[i] == 's':
-            operation.append(data[i:i+3])
-            i += 3
-            continue
     for j in range(n):
-        if operation[j][0] == '+':
-            insert((int(operation[j][1]) + x) % M)
-        elif operation[j][0] == '-':
-            erase((int(operation[j][1]) + x) % M)
-        elif operation[j][0] == '?':
-            print ('Found' if search((int(operation[j][1]) + x) % M) else 'Not found')
-        elif operation[j][0] == 's':
-            result = sum((int(operation[j][1]) + x) % M, (int(operation[j][2]) + x) % M)
+        operation = input().split()
+        if operation[0] == '+':
+            insert((int(operation[1]) + x) % M)
+        elif operation[0] == '-':
+            erase((int(operation[1]) + x) % M)
+        elif operation[0] == '?':
+            print ('Found' if search((int(operation[1]) + x) % M) else 'Not found')
+        elif operation[0] == 's':
+            result = sum((int(operation[1]) + x) % M, (int(operation[2]) + x) % M)
             print(result)
             x = result % M
