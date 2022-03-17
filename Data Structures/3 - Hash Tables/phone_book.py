@@ -1,6 +1,6 @@
 class HashTable():
-    size = 31
-    prime = 29
+    size = 10000001
+    prime = 9999991
     max_load_factor = 0.75
     
     def __init__(self):
@@ -18,6 +18,7 @@ class HashTable():
         hashed_key = self.hashing(key)
         if self.table[hashed_key] == None:
             self.table[hashed_key] = (key, value)
+            self.rehash(self.table)
             return
         i = 1
         while self.table[hashed_key] != None and self.table[hashed_key] != -1:
@@ -58,20 +59,18 @@ class HashTable():
     def rehash(self, table):
         load_factor = self.num_of_keys / self.size
         if load_factor > self.max_load_factor:
+            self.num_of_keys = 0
             temp = self.table
             self.size *= 2
             self.table = [None] * self.size
             for i in temp:
-                if i != None and i != 0:
+                if i != None and i != -1:
                     self.insert(i[0], i[1])
-                
-    def print_table(self):
-        print(self.table)
                 
 if __name__ == '__main__':
     phone_book = HashTable()
     n = int(input())
-    for i in range(n):
+    for _ in range(n):
         query = input().split()
         if query[0] == 'add':
             phone_book.insert(int(query[1]), query[2])
