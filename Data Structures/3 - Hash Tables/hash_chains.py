@@ -104,7 +104,9 @@ if __name__ == '__main__':
                 chain.insert(query[1])
                 elements.append(query[1])
         elif query[0] == 'del':
-            chain.delete(query[1])
+            if query[1] in elements:
+                chain.delete(query[1])
+                elements.remove(query[1])
         elif query[0] == 'find':
             chain.find(query[1])
         elif query[0] == 'check':
