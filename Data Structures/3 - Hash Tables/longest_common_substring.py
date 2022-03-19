@@ -52,6 +52,8 @@ def longest_common_substring(string_1, string_2):
                         breakFlag = True
                         break
                     else:
+                        first_index = i
+                        second_index = j
                         tempFlag = True
                         left += 1
                         break
@@ -64,7 +66,7 @@ def longest_common_substring(string_1, string_2):
             mid -= 1
             break
         else:
-            right = mid - 1
+            right = mid
     
     if len(string_1) <= len(string_2):
         return first_index, second_index, mid
