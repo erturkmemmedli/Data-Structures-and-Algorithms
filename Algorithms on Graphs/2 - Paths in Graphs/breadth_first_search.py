@@ -3,12 +3,12 @@ from collections import deque
 def BFS(adjacency_list, start, end):
     distance = [float('inf') for _ in range(len(adjacency_list))]
     distance[start] = 0
-    Q = deque([start])
-    while len(Q) != 0:
-        vertex = Q.popleft()
+    Queue = deque([start])
+    while len(Queue) != 0:
+        vertex = Queue.popleft()
         for path in adjacency_list[vertex]:
             if distance[path] == float('inf'):
-                Q.append(path)
+                Queue.append(path)
                 distance[path] = distance[vertex] + 1
                 if path == end:
                     return distance[path]
