@@ -19,7 +19,6 @@ def DFS(adjacency_list, adjacency_list_reversed):
             explore(adjacency_list, vertex, visited, postorder, strongly_connected_components)
             scc += 1
             result += 1
-    #print('strongly connected components:', strongly_connected_components)
     return result
 
 def explore(adjacency_list, vertex, visited, postorder, strongly_connected_components):
