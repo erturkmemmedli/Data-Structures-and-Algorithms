@@ -16,6 +16,11 @@ def Bellman_Ford(adjacency_list, cost_list, start):
                 index = adjacency_list[i].index(j)
                 if distance[j] > distance[i] + cost_list[i][index]:
                     distance[j] = distance[i] + cost_list[i][index]
+                    
+    for i in range(len(adjacency_list)):
+        if reserved[i] != distance[i]:
+            for j in adjacency_list[i]:
+                distance[j] = None
 
     return reserved, distance
 
