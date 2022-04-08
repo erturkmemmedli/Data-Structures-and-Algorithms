@@ -2,18 +2,16 @@ import heapq
 
 def Dijkstra(adjacency_list, cost_list, start, end):
     distance = [float('inf') for _ in range(len(adjacency_list))]
-    parent = [None for _ in range(len(adjacency_list))]
     distance[start] = 0
     H = [(distance[start], start)]
+    heapq.heapify(H)
     while len(H) != 0:
-        heapq.heapify(H)
         item = heapq.heappop(H)
         vertex = item[1]
         for i in range(len(adjacency_list[vertex])):
             if distance[adjacency_list[vertex][i]] > distance[vertex] + cost_list[vertex][i]:
                 distance[adjacency_list[vertex][i]] = distance[vertex] + cost_list[vertex][i]
-                parent[adjacency_list[vertex][i]] = vertex
-                H.append((distance[adjacency_list[vertex][i]], adjacency_list[vertex][i]))
+                heapq.heappush(H, (distance[adjacency_list[vertex][i]], adjacency_list[vertex][i]))
         if vertex == end:
             return item[0]
     return -1
