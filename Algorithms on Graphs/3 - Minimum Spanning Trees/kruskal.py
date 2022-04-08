@@ -34,7 +34,7 @@ class Edge:
         self.weight = weight
 
 def Kruskal(n, x, y):
-    MST = []
+    result = 0
     nodes = []
     for i in range(0, n):
         MakeSet(i, x, y, nodes)
@@ -46,11 +46,8 @@ def Kruskal(n, x, y):
     edges = sorted(edges, key = lambda e: e.weight)
     for edge in edges:
         if Find(edge.u, nodes) != Find(edge.v, nodes):
-            MST.append(edge)
+            result += edge.weight
             Union(edge.u, edge.v, nodes)
-    result = 0
-    for edge in MST:
-        result += edge.weight
     return result
 	
 if __name__ == '__main__':
