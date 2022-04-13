@@ -23,7 +23,7 @@ def BiderectionalDijkstra(adj, adj_rev, cost, cost_rev, start, end):
                 heapq.heappush(H, (dist[adj[vertex][i]], adj[vertex][i]))
         proc.append(vertex)
         if vertex in proc_rev:
-            return shortest(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev)
+            return shortest_path(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev)
         item = heapq.heappop(H_rev)
         vertex = item[1]
         for j in range(0, len(adj_rev[vertex])):
@@ -33,7 +33,7 @@ def BiderectionalDijkstra(adj, adj_rev, cost, cost_rev, start, end):
                 heapq.heappush(H_rev, (dist_rev[adj_rev[vertex][j]], adj_rev[vertex][j]))
         proc_rev.append(vertex)
         if vertex in proc:
-            return shortest(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev)
+            return shortest_path(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev)
     return -1
 
 def shortest_path(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev):
