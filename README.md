@@ -3,6 +3,8 @@
 ### Useful Resources:
 - [Data Structure Visualizations (David Galles)](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
+- [10th DIMACS Implementation Challenge - Graph Partitioning and Graph Clustering](https://www.cc.gatech.edu/dimacs10/downloads.shtml)
+- [9th DIMACS Implementation Challenge - Shortest Paths](http://www.diag.uniroma1.it//challenge9/download.shtml)
 - [Edit Distance Calculator (Peter Kleiweg)](https://www.let.rug.nl/~kleiweg/lev/)
 - [Xueqiao Xu - mycodeplayground](https://code.google.com/archive/p/mycodeplayground/downloads)
 - [Learning Algorithms Through Interactive Puzzles](https://discrete-math-puzzles.github.io/everything.html)
