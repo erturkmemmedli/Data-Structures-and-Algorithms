@@ -1,14 +1,16 @@
 import heapq
 
 def BiderectionalDijkstra(adj, adj_rev, cost, cost_rev, start, end):
-    dist = [float('inf') for _ in range(len(adj))]
-    dist_rev = [float('inf') for _ in range(len(adj))]
-    prev = [None for _ in range(len(adj))]
-    prev_rev = [None for _ in range(len(adj))]
+    dist = {}
+    dist_rev = {}
+    prev = {}
+    prev_rev = {}
     dist[start] = 0
     dist_rev[end] = 0
     proc = []
     proc_rev = []
+    visited = {}
+    visited_rev = {}
     H = [(dist[start], start)]
     H_rev = [(dist_rev[end], end)]
     heapq.heapify(H)
@@ -17,33 +19,47 @@ def BiderectionalDijkstra(adj, adj_rev, cost, cost_rev, start, end):
         item = heapq.heappop(H)
         vertex = item[1]
         for i in range(0, len(adj[vertex])):
-            if dist[adj[vertex][i]] > dist[vertex] + cost[vertex][i]:
+            if adj[vertex][i] not in dist:
                 dist[adj[vertex][i]] = dist[vertex] + cost[vertex][i]
                 prev[adj[vertex][i]] = vertex
                 heapq.heappush(H, (dist[adj[vertex][i]], adj[vertex][i]))
+            else:
+                if dist[adj[vertex][i]] > dist[vertex] + cost[vertex][i]:
+                    dist[adj[vertex][i]] = dist[vertex] + cost[vertex][i]
+                    prev[adj[vertex][i]] = vertex
+                    heapq.heappush(H, (dist[adj[vertex][i]], adj[vertex][i]))
         proc.append(vertex)
-        if vertex in proc_rev:
+        visited[vertex] = True
+        if vertex in visited_rev:
             return shortest_path(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev)
         item = heapq.heappop(H_rev)
         vertex = item[1]
         for j in range(0, len(adj_rev[vertex])):
-            if dist_rev[adj_rev[vertex][j]] > dist_rev[vertex] + cost_rev[vertex][j]:
+            if adj_rev[vertex][j] not in dist_rev:
                 dist_rev[adj_rev[vertex][j]] = dist_rev[vertex] + cost_rev[vertex][j]
                 prev_rev[adj_rev[vertex][j]] = vertex
                 heapq.heappush(H_rev, (dist_rev[adj_rev[vertex][j]], adj_rev[vertex][j]))
+            else:
+                if dist_rev[adj_rev[vertex][j]] > dist_rev[vertex] + cost_rev[vertex][j]:
+                    dist_rev[adj_rev[vertex][j]] = dist_rev[vertex] + cost_rev[vertex][j]
+                    prev_rev[adj_rev[vertex][j]] = vertex
+                    heapq.heappush(H_rev, (dist_rev[adj_rev[vertex][j]], adj_rev[vertex][j]))
         proc_rev.append(vertex)
-        if vertex in proc:
+        visited_rev[vertex] = True
+        if vertex in visited:
             return shortest_path(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev)
     return -1
 
 def shortest_path(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev):
     distance = float('inf')
     u_best = None
-    for u in set(proc + proc_rev):
-        if dist[u] + dist_rev[u] < distance:
-            u_best = u
-            distance = dist[u] + dist_rev[u]
+    for u in proc + proc_rev:
+        if u in dist and u in dist_rev:
+            if dist[u] + dist_rev[u] < distance:
+                u_best = u
+                distance = dist[u] + dist_rev[u]
     return distance
+	
 
 if __name__ == '__main__':
     vertex, edge = map(int, input().split())
