@@ -59,7 +59,6 @@ def shortest_path(start, dist, prev, proc, end, dist_rev, prev_rev, proc_rev):
                 u_best = u
                 distance = dist[u] + dist_rev[u]
     return distance
-	
 
 if __name__ == '__main__':
     vertex, edge = map(int, input().split())
