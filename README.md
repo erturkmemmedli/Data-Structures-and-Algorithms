@@ -2,6 +2,7 @@
 
 ### Useful Resources:
 - [Data Structure Visualizations (David Galles)](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+- [Python Programming Game](http://checkio.org/)
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
 - [10th DIMACS Implementation Challenge - Graph Partitioning and Graph Clustering](https://www.cc.gatech.edu/dimacs10/downloads.shtml)
 - [9th DIMACS Implementation Challenge - Shortest Paths](http://www.diag.uniroma1.it//challenge9/download.shtml)
