@@ -51,3 +51,4 @@
 - [Nick White](https://www.youtube.com/c/NickWhite/videos)
 - [Kevin Naughton Jr.](https://www.youtube.com/c/KevinNaughtonJr/videos)
 - [freeCodeCamp](https://www.youtube.com/c/Freecodecamp)
+- [Clément Mihailescu](https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g/videos)
