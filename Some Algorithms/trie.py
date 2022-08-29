@@ -1,5 +1,3 @@
-
-              
 class Trie:
     def __init__(self):
         self.root = self.get_node()
@@ -63,4 +61,3 @@ class Trie:
                 return False
             temp = temp.children[index]
         return temp.end
-      
