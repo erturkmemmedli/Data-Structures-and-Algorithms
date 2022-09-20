@@ -48,6 +48,7 @@
 - [TECH DOSE](https://www.youtube.com/c/TECHDOSE4u/videos)
 - [NeetCode](https://www.youtube.com/c/NeetCode/videos)
 - [Algorithms Live!](https://www.youtube.com/c/AlgorithmsLive/videos)
+- [WilliamFiset](https://www.youtube.com/c/WilliamFiset-videos/videos)
 - [Corey Schafer](https://www.youtube.com/c/Coreyms/videos)
 - [TechLead](https://www.youtube.com/c/TechLead/videos)
 - [Nick White](https://www.youtube.com/c/NickWhite/videos)
