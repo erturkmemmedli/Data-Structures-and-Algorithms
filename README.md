@@ -4,6 +4,7 @@
 - [Data Structure Visualizations (David Galles)](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 - [Python Programming Game](http://checkio.org/)
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
+- [Cracking the Coding Interview](http://englishonlineclub.com/pdf/Cracking%20the%20Coding%20Interview%20-%20189%20Programming%20Questions%20and%20Solutions%20(6th%20Edition)%20[EnglishOnlineClub.com].pdf)
 - [CHAPTER 16: DYNAMIC PROGRAMMING](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap16.htm)
 - [10th DIMACS Implementation Challenge - Graph Partitioning and Graph Clustering](https://www.cc.gatech.edu/dimacs10/downloads.shtml)
 - [9th DIMACS Implementation Challenge - Shortest Paths](http://www.diag.uniroma1.it//challenge9/download.shtml)
