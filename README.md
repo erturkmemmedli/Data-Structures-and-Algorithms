@@ -23,6 +23,7 @@
 - [Udemy - Mastering Data Structures & Algorithms using C and C++](https://www.udemy.com/course/datastructurescncpp/)
 - [Abdul Bari - YouTube - Algorithms](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
 - [Sarkhan Rasullu - Sıfırdan Sona Java](https://www.youtube.com/playlist?list=PLm5YQvYcib_uS2LFXZmBkmfktBDGQ89d3)
+- [Sarkhan Rasullu - Sıfırdan Sona Java (Full Version)](https://www.udemy.com/course/java-azerbaycan-dilinde/)
 - [Khan Academy - Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
 - [Open-Sourse Algorithm Library](https://the-algorithms.com/)
 - [San Diego State University - CS310 - Data Structures in Java](https://www.youtube.com/playlist?list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk)
