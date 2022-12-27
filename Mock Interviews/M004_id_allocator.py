@@ -1,3 +1,5 @@
+# Mock interview with Bahruz Abil (Microsoft)
+
 '''
 Id allocator. Capacity 0-N.
 int Allocate() : returns avilable ID within 0-N range.
