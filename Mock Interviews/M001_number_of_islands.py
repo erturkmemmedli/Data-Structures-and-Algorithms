@@ -1,4 +1,4 @@
-# LeetCode 200
+# LeetCode 200 with Adil Adilli (Google)
 
 from collections import deque
 
