@@ -1,3 +1,5 @@
+# Mock interview with Adil Adilli (Google)
+
 """
 * `SET name value` – Set the variable `name` to the value `value`. For
   simplicity `value` may be an string.
