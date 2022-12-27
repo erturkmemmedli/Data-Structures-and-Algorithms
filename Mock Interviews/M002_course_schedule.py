@@ -1,4 +1,4 @@
-# LeetCode 207 & 210
+# LeetCode 207 & 210 with Adil Adilli (Google)
 
 # cycle detection
 
