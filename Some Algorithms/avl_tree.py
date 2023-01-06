@@ -117,7 +117,5 @@ class AVLTree(object):
             left_res = self.successor(node.left, val)
             return left_res if left_res else node.val
     
-    
-if __name__ == '__main__':
-    tree = AVLTree()
-    root = tree.root
+# tree = AVLTree()
+# root = tree.root
