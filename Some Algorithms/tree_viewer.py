@@ -7,12 +7,10 @@ class TreeNode:
     def __repr__(self):
         return 'TreeNode({})'.format(self.val)
 
-
 def deserialize(string):
     if string == '{}':
         return None
-    nodes = [None if val == 'null' else TreeNode(int(val))
-             for val in string.strip('[]{}').split(',')]
+    nodes = [None if val == 'null' else TreeNode(int(val)) for val in string.strip('[]{}').split(',')]
     kids = nodes[::-1]
     root = kids.pop()
     for node in nodes:
@@ -20,7 +18,6 @@ def deserialize(string):
             if kids: node.left = kids.pop()
             if kids: node.right = kids.pop()
     return root
-
 
 def drawtree(root):
     def height(root):
@@ -49,7 +46,6 @@ def drawtree(root):
     draw(root, 0, 30 * h, 40 * h)
     t.hideturtle()
     turtle.mainloop()
-
 
 if __name__ == '__main__':
     drawtree(deserialize('[1,7,3,null,6,4,null,null,5]'))
