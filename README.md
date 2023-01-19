@@ -12,6 +12,7 @@
 - [Learning Algorithms Through Interactive Puzzles](https://discrete-math-puzzles.github.io/everything.html)
 - [Algorithm is Not a Four-Letter Word (Jamis Buck)](https://www.jamisbuck.org/presentations/rubyconf2011/)
 - [The Buckblog (Jamis Buck)](http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap.html)
+- [Algorithms for Competitive Programming](https://cp-algorithms.com/)
 - [Coursera - Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms)
 - [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
 - [Coursera - Algorithms Part I](https://www.coursera.org/learn/algorithms-part1)
