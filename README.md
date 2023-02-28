@@ -1,4 +1,9 @@
-# Data-Structures-and-Algorithms
+# Data Structures and Algorithms
+
+### Certificates:
+- [Data Structures and Algorithms Specialization](https://www.coursera.org/account/accomplishments/specialization/certificate/9D9QBGQZR8W9)
+- [Algorithms Specialization](https://www.coursera.org/account/accomplishments/specialization/certificate/5W566RHBABRC)
+- [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/account/accomplishments/specialization/certificate/S3NKRU5Y2PPT)
 
 ### Useful Resources:
 - [Data Structure Visualizations (David Galles)](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
