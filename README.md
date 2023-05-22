@@ -20,6 +20,7 @@
 - [Algorithms for Competitive Programming](https://cp-algorithms.com/)
 - [Coursera - Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms)
 - [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
+- [Coursera - Algorithms Specialization (YouTube)](https://www.youtube.com/playlist?list=PLEAYkSg4uSQ37A6_NrUnTHEKp6EkAxTMa)
 - [Coursera - Algorithms Part I](https://www.coursera.org/learn/algorithms-part1)
 - [Coursera - Algorithms Part II](https://www.coursera.org/learn/algorithms-part2)
 - [Coursera - Analysis of Algorithms](https://www.coursera.org/learn/analysis-of-algorithms)
