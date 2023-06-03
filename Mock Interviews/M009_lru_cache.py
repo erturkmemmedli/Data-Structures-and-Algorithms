@@ -1,4 +1,4 @@
-# Movk Interview with Tural Ismayilzade (Oracle)
+# LC146 - Mock Interview with Tural Ismayilzade (Oracle)
 
 class ListNode:
 
