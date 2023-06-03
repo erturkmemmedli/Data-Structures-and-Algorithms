@@ -75,3 +75,36 @@ class KVPDatabase:
     def test(self):
         print(self.database)
         print(self.operations)
+
+        
+# solution with another constraint than can be used for studying
+
+class KVS:
+
+	def __init__(self):
+		self.stack = [{}] '''dictionary is gloabal transactions'''
+
+	def set(self, k, v):
+		self.stack[-1][k] = v
+
+	def get(self, k):
+		for i in range(len(self.stack)-1, -1, -1): ''' backwards to find most recent key'''
+			if k in self.stack[i]:
+				return self.stack[i][k]
+
+	def begin(self):
+		self.stack.append({})
+
+	def commit(self):
+		last_transaction = self.stack.pop()
+		for k,v in last_transaction.items():
+			self.stack[-1][k] = v
+
+	def rollback(self):
+		self.stack.pop()
+
+	def delete(self, k):
+		for i in range(len(self.stack)-1, -1, -1):
+			if k in self.stack[i]:
+				del self.stack[i][k]
+				return
