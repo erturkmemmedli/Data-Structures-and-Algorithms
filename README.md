@@ -54,6 +54,8 @@
 - [Topcoder](https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming)
 - [Pramp](https://www.pramp.com/dashboard#/)
 - [PythonTutor](https://pythontutor.com/)
+- [Gymnasium RL](https://gymnasium.farama.org/)
+- [Kaggle](https://www.kaggle.com/competitions)
 
 ### YouTube Channels:
 - [Computerphile](https://www.youtube.com/user/Computerphile/videos)
