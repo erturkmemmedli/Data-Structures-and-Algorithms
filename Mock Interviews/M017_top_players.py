@@ -12,6 +12,7 @@ Bob-70
 # upper-lower case in names?
 # valid data?
 # didn’t ask for return type
+# didn't convert score to int
 
 n of entries.
 
