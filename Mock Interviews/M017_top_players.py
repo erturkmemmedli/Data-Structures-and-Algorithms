@@ -20,12 +20,12 @@ Sorted by their highest score
 '''
 
 def find_top_players(players_data):
-  player_map = {}
+	player_map = {}
 	
 	for  player in player_data:
 		name, score = player.split('-')
     
-    if name not in player_map:
+    		if name not in player_map:
 			player_map[name] = -float('inf')
 		player_map[name] = max(player_map[name], score)
 	
@@ -39,17 +39,17 @@ Class TopPlayers:
 		self.top_players_heap = []
 	
 	def player_input(player):
-    if name not in player_map:
+   		if name not in player_map:
 			player_map[name] = -float('inf')
 		self.player_map[name] = max(self.player_map[name], score)
 		
 		if len(self.top_players_heap) < 50:
 			# lock
 			heappush(self.top_players_heap, (score, name)
-		  # unlock
+		  	# unlock
 		else:
 			if score > self.top_players_heap[0][0]:
-        # lock
+        			# lock
 				heappop(self.top_players_heap)
 				heappush(self.top_players_heap, (score, name))
 				# unlock
