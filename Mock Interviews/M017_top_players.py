@@ -1,4 +1,4 @@
-# Interview with Tural Farhadov (MongoDB)
+# Mock Interview with Tural Farhadov (MongoDB)
 
 '''
 Alice-50
