@@ -1,5 +1,5 @@
 # Mock Intetrview with Adil Adilli (Salesforce)
-
+# Asked in Dropbox
 '''
 [
 3 4 16
@@ -65,7 +65,5 @@ def find_max_delivery(grid):
               	break
       
       
-      
-      
-                
-                
+# division -> most challenging project, most impactful project
+# experience -> how company culture changed
