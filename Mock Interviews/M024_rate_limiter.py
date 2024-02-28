@@ -1,7 +1,7 @@
 # Mock interview with Asif Mammadov (Splunk)
 
+'''
 Question: Design a rate limiter. 
-
 
 6 requests per hour 
  
@@ -23,32 +23,32 @@ Question: Design a rate limiter.
 
 
 Request(context, type)
-
+'''
 
 class RateLimiter:
-	def __init__(self, limit=1 hour, capacity=60 req):
+		def __init__(self, limit=1 hour, capacity=60 req):
     		self.limit = limit
-	        self.capacity = capacity
-	        self.window = deque()
+        self.capacity = capacity
+        self.window = deque()
 
-	def should_procees_request(request) -> bool:
-		time = time.now()
-		if not self.window:
-			self.window.append(time)
-		else:
-			while self.window and time - self.window[0] > self.limit: 59>=60 false
-				self.window.popleft()
-			if self.capacity > len(self.window): 6 > 3 false
-				self.window.append(time)
-				return True
-			else:
-				return False
+		def should_procees_request(request) -> bool:
+    		time = time.now()
+    		if not self.window:
+        		self.window.append(time)
+        else:
+        		while self.window and time - self.window[0] > self.limit: 59>=60 false
+            		self.window.popleft()
+            if self.capacity > len(self.window): 6 > 3 false
+            		self.window.append(time)
+                return True
+            else:
+            		return False
 
 
 
-    13:00 - 11:56 > 60 min
+    # 13:00 - 11:56 > 60 min
 
-    [12:55, 13:00]
+    # [12:55, 13:00]
 
 # Ask for requirements first, then design API, then implement the code
 # RateLimiter can be different type - time-based, ip-based, user-based, account-based, request-based
