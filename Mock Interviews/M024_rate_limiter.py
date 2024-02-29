@@ -61,3 +61,18 @@ Check Question:
 
 Given the two integer arrays, give me the pair whose sum is closest to 0. There is only a single correct answer.
 '''
+
+ex:
+a = [-6,-4,-1,5,6,8,10]
+b = [-8,-7,-5,-2,7,9,11]
+
+use two pointers -> i = a(0), j = b(-1)
+
+-6+11=5
+-6+9=3
+-6+7=1
+-6-2=-8
+-4-2=-6
+-1-2=-3
+5-2=3
+5-5=0
