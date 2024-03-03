@@ -1,0 +1,23 @@
+# Mock interview with Rustam Hashimov (Google)
+
+Q: What is your greatest achievement?
+
+name, experience, major telecom company now, before oil company - backend, automation
+
+data gathering for software development purpose - centralized solution - integration challenge - how much saving made - OPC
+
+at beginning, tell interviewer that I will go deep into details
+
+difficulty? - ambiguity because there was organizational complexity
+
+what did you do in 1 month period? - requirement gathering and discussing findings
+
+content - technical analysis, organizational complexity, execution with multiple stakeholders, gathering requirements, discussing findings with team members
+
+what would you do differently - growth mindset
+
+conflict? - bureucratic barriers, convincing him that cost-effective solution will be applied
+
+prioritization - trade-offs - timeline (deadline extension), resource (human involving), scope (feature limitation) - company values 
+
+organization of scenarios - STAR order, nested speech
