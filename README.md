@@ -46,6 +46,7 @@
 ### Useful Environments:
 - [LeetCode](https://leetcode.com/problemset/all/)
 - [HackerRank](https://www.hackerrank.com/dashboard)
+- [Python Game](https://py.checkio.org/)
 - [AlgoExpert](https://www.algoexpert.io/product)
 - [CSES](https://cses.fi/problemset/)
 - [ProjectEuler](https://projecteuler.net/archives)
