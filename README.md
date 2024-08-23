@@ -45,9 +45,11 @@
 
 ### Useful Environments:
 - [LeetCode](https://leetcode.com/problemset/all/)
+- [HackerRank](https://www.hackerrank.com/dashboard)
 - [AlgoExpert](https://www.algoexpert.io/product)
 - [CSES](https://cses.fi/problemset/)
 - [ProjectEuler](https://projecteuler.net/archives)
+- [e-Olymp](https://basecamp.eolymp.com/en/problems)
 - [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm)
 - [JDoodle](https://www.jdoodle.com/)
 - [Regex101](https://regex101.com/)
