@@ -50,6 +50,7 @@
 - [CSES](https://cses.fi/problemset/)
 - [ProjectEuler](https://projecteuler.net/archives)
 - [e-Olymp](https://basecamp.eolymp.com/en/problems)
+- [CodeForces](https://codeforces.com/problemset)
 - [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm)
 - [JDoodle](https://www.jdoodle.com/)
 - [Regex101](https://regex101.com/)
