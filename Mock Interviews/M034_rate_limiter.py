@@ -52,6 +52,6 @@ print(rl.is_accessible('B', 10))
 print(rl.storage)
 
 
-# Cronjob - TTL (Redis)
+# OutOfMemory - Cronjob - TTL (Redis)
 # Multithreading - Locking each user based on their user_id saved in locks dict.
 # Distributed Cache - Sticky Session (communicated with LoadBalancer to use always Same Webserver)
