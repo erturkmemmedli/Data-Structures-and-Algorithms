@@ -48,6 +48,8 @@
 - [LeetCode](https://leetcode.com/problemset/all/)
 - [HackerRank](https://www.hackerrank.com/dashboard)
 - [HelloInterview](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
+- [BugFree.ai](https://bugfree.ai/leetcode/)
+- [Algolab](https://algolab.so/courses/enrolled/1903003)
 - [Python Game](https://py.checkio.org/)
 - [AlgoExpert](https://www.algoexpert.io/product)
 - [CSES](https://cses.fi/problemset/)
