@@ -42,10 +42,12 @@
 - [CHAPTER 16: DYNAMIC PROGRAMMING](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap16.htm)
 - [10th DIMACS Implementation Challenge - Graph Partitioning and Graph Clustering](https://www.cc.gatech.edu/dimacs10/downloads.shtml)
 - [9th DIMACS Implementation Challenge - Shortest Paths](http://www.diag.uniroma1.it//challenge9/download.shtml)
+- [Conway’s Game of Life](https://playgameoflife.com/)
 
 ### Useful Environments:
 - [LeetCode](https://leetcode.com/problemset/all/)
 - [HackerRank](https://www.hackerrank.com/dashboard)
+- [HelloInterview](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
 - [Python Game](https://py.checkio.org/)
 - [AlgoExpert](https://www.algoexpert.io/product)
 - [CSES](https://cses.fi/problemset/)
